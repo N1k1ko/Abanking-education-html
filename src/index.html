@@ -1,105 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
+        <meta name="viewport" 
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Hi, I am John, Creative Technologist</title>
     </head>
 
-
-    <body>
+    <body class="page">
         <header class="header">
-            <ul class="header_list">
-                <li class="header_list_item">
-                    <a href="#">Works</a>
-                </li>
-                <li class="header_list_item">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="header_list_item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <div class="page__container header__container">
+                <nav class="nav">
+                    <ul class="page__list nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="page__link nav__link">Works</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="page__link nav__link">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="page__link nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main>
-            <h1>Hi, I am John, <br>Creative Technologist</br></h1>
-            <p><img src="img/placeholder.svg" class="main_photo" alt="John's photo"></p>
-            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <p><a href="#" class="download_resume"> Download Resume</a></p>
+        <main class="main">
+            <article class="about-user">
+                <div class="page__container about-user__container">
+                    <div class="about-user__info">
+                        <div class="about-user__text">
+                            <h1 class="about-user__title">Hi, I am John<br>Creative Technologist</h1>
+                            <p class="page__text about-user__description">Amet minim mollit non deserunt ullamco est sit
+                                aliqua dolor do amet
+                                sint.
+                                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                amet.</p>
+                        </div>
+                    </div>
+                    <button class="about-user__button">Download Resume</button>
+                </div>
+            </article>
+            <section class="recent-posts">
+                <div class="page__container recent-posts__container">
+                    <div class="recent-posts__title-container">
+                        <h2 class="section-title recent-posts__title">Recent posts</h2>
+                        <a href="#" class="page__link recent-posts__link">View all</a>
+                    </div>
+                    <ul class="page__list recent-posts__list posts-list">
+                        <li class="posts-list__item">
+                                <a href="#" class="page__link">
+                                    <h3 class="posts-list__title">Making a design system from scratch</h3>
+                                </a>
+                                <p class="page__text posts-list__keys">Design, Pattern</p>
+                                <p class="page__text posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametsint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </li>
+                        <li class="posts-list__item">
+                                <a href="#" class="page__link">
+                                    <h3 class="posts-list__title">Creating pixel perfect icons in Figma</h3>
+                                </a>
+                                <p class="page__text posts-list__keys">Figma, Icon Design</p>
+                                <p class="page__text posts-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do ametsint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="featured-works">
+                <div class="page__container featured-works__container">
+                    <h2 class="section-title featured-works__title">Featured works</h2>
+                    <ul class="page__list featured-works__list works-list">
+                        <li class="works-list__item">
+                            <a href="#" class="page__link works-list__link">
+                                <h3 class="works-list__title">Designing Dashboards</h3>
+                            </a>
+                                <div class="works-list__info">
+                                    <span class="works-list__date">2020</span>
+                                    <span class="works-list__theme">Dashboard</span>
+                                </div>
+                                <img src="img/featured-works-1.jpg" alt="Feautured work image" class="works-list__image">
+                                <p class="page__text works-list__text">Amet minim mollit non deserunt ullamco est sit aliqua
+                                    dolor
+                                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                                    consequat sunt nostrud amet.</p>
+                        </li>
+                        <li class="works-list__item">
+                            <a href="#" class="page__link works-list__link">
+                                <h3 class="works-list__title">Vibrant Portraits of 2020</h3>
+                            </a>
+                                <div class="works-list__info">
+                                    <span class="works-list__date">2018</span>
+                                    <span class="works-list__theme">Illustration</span>
+                                </div>
+                                <img src="img/featured-works-2.jpg" alt="Feautured work image" class="works-list__image">
+                                <p class="page__text works-list__text">Amet minim mollit non deserunt ullamco est sit aliqua
+                                    dolor
+                                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                                    consequat sunt nostrud amet.</p>
+                        </li>
+                        <li class="works-list__item">
+                            <a href="#" class="page__link works-list__link">
+                                <h3 class="works-list__title">36 Days of Malayalam type</h3>
+                            </a>
+                                <div class="works-list__info">
+                                    <span class="works-list__date">2018</span>
+                                    <span class="works-list__theme">Typography</span>
+                                </div>
+                                <img src="img/featured-works-3.jpg" alt="Feautured work image" class="works-list__image">
+                                <p class="page__text works-list__text">Amet minim mollit non deserunt ullamco est sit aliqua
+                                    dolor
+                                    do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                                    consequat sunt nostrud amet.</p>
+                        </li>
+                    </ul>
 
-            <p class="recent_posts">Recent posts</p>
-            <p><a href="#">View all</a></p>
-            <ul class="recent_posts_list">
-                <li class="recent_posts_list_item">
-                    <a href="#"><h2>Making a design system from scratch</h2></a>
-                    <p class="recent_posts_work_done">Design, Pattern</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </li>
-                <li class="recent_posts_list_item">
-                    <a href="#"><h2>Creating pixel perfect icons in Figma</h2></a>
-                    <p class="recent_posts_work_done">Figma, Icon Design</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </li>
-            </ul>
-
-            <p class="featured_works">Featured works</p>
-            <ul class="featured_works_list">
-                <li class="featured_works_list_item">
-                    <a href="#"><h2>Designing Dashboards</h2></a>
-                    <img src="img/placeholder.svg" alt="Dashboard">
-                    <p class="featured_works_year">2020</p>
-                    <p class="featured_works_work">Dashboard</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </li>
-
-                <li class="featured_works_list_item">
-                    <a href="#"><h2>Vibrant Portraits of 2020</h2></a>
-                    <img src="img/placeholder.svg" alt="Portrait">
-                    <p class="featured_works_year">2018</p>
-                    <p class="featured_works_work">Illustration</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </li>
-
-                <li class="featured_works_list_item">
-                    <a href="#"><h2>36 Days of Malayalam type</h2></a>
-                    <img src="img/placeholder.svg" alt="Symbol">
-                    <p class="featured_works_year">2018</p>
-                    <p class="featured_works_work">Typography</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                </li>
-            </ul>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
-            <ul class="footer_list">
-                <li class="footer_list_item">
-                    <a href="#">
-                        <img src="img/placeholder.svg" alt="facebook logo">
+            <ul class="page__list footer__social-list social-list">
+                <li class="social-list__item">
+                    <a href="#" class="page__link social-list__link">
+                        <img src="img/icon-facebook.svg" alt="Facebook" class="social-list__image">
                     </a>
                 </li>
-                <li class="footer_list_item">
-                    <a href="#">
-                        <img src="img/placeholder.svg" alt="instagramm logo">
+                <li class="social-list__item">
+                    <a href="#" class="page__link social-list__link">
+                        <img src="img/icon-instagram.svg" alt="Instagram" class="social-list__image">
                     </a>
                 </li>
-                <li class="footer_list_item">
-                    <a href="#">
-                        <img src="img/placeholder.svg" alt="twitter logo">
+                <li class="social-list__item">
+                    <a href="#" class="page__link social-list__link">
+                        <img src="img/icon-twitter.svg" alt="Twitter" class="social-list__image">
                     </a>
                 </li>
-                <li class="footer_list_item">
-                    <a href="#">
-                        <img src="img/placeholder.svg" alt="linkedin logo">
+                <li class="social-list__item">
+                    <a href="#" class="page__link social-list__link">
+                        <img src="img/icon-linkedin.svg" alt="LinkedIn" class="social-list__image">
                     </a>
                 </li>
             </ul>
-            <p>Copyright ©2020 All rights reserved </p>
+            <p class="page__text footer__copyright">Copyright ©2020 All rights reserved</p>
         </footer>
     </body>
+
 </html>

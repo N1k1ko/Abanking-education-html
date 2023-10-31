@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+
+$page-font: Heebo, Arial, sans-serif;
+$dark-color: #21243D;
+$light-color: #8695A4;
+$primary-color: #FF6464;
+$secondary-color: #00A8CC;
+
+.page {
+    font-family: $page-font;
+    color: $dark-color;
+    margin: 0;
+    &__text {
+        margin: 0;
+        font-size: 16px;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__container {
+        margin: 0 auto;
+        padding: 0 20px;
+        min-width: 500px;
+        max-width: 850px;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 33px;
+        height: 70px;
+        font-weight: 500;
+    }
+    &__link {
+        border-bottom: 2px solid transparent;
+        transition: border-color .25s ease;
+        display: block;
+        &:hover{
+            border-color: inherit;
+        }
+    }
+}
+
+.about-user {
+    padding: 70px 0;
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+    &__title { 
+        font-size: 44px;
+        line-height: 60px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    &__photo {
+        height: 240px;
+        width: auto;
+        margin-left: 20px;
+    }
+    &__button {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        background-color: $primary-color;
+        border-radius: 2px;
+        border: 2px solid $primary-color;
+        cursor: pointer;
+        transition: .25s ease, transform .5s ease;
+        &:hover{
+            color: $primary-color;
+            background-color: white;
+            border-color: $primary-color;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 0;
+}
+
+.recent-posts {
+    background-color: #EDF7FA;
+    &__title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $secondary-color;
+        text-decoration: underline 2px;
+        text-decoration-color: transparent;
+        transition: text-decoration-color .25s ease;
+        &:hover{
+            text-decoration-color: inherit;
+        }
+    }
+    .posts-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        &__item{
+            padding: 20px;
+            border-radius: 4px;
+            background-color: white;
+            margin-bottom: 20px;
+            border: 2px solid transparent;
+            transition: border-color .25s ease;
+            &:hover{
+                border-color: $light-color;
+            }
+        }
+        &__title {
+           font-size: 26px;
+           font-weight: bold;
+           margin: 0;
+           margin-bottom: 20px;
+        }
+        &__keys {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.featured-works{
+    margin-bottom: 80px;
+}
+
+.works-list {
+    &__item {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E0E0E0;     
+        transition: border-color .25s ease;
+        &:hover{
+            border-color: $light-color;
+        } 
+    }
+
+    &__link {
+        display: grid;
+        grid-template: 40px 40px 1fr / 250px 1fr;
+        align-items: start;
+        column-gap: 20px;
+    }
+    &__title {margin: 0;}
+    &__image {
+        order: -1;
+        grid-row: span 3;
+    }
+    &__date {
+        color: white;
+        background-color: #142850;
+        border-radius: 16px;
+        padding: 0 10px;
+        margin-right: 20px;
+    }
+    &__theme {
+        color: $light-color;
+    }
+}
+
+.footer {
+    padding: 50px;
+    &__copyright {
+        text-align: center;
+    }
+}
+
+.social-list {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    font-size: 0;
+    margin-bottom: 25px;
+    &__image {
+        height: 30px;
+        transition: transform .25s ease;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
